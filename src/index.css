@@ -1,0 +1,298 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  background: #f9fafb;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Main Container */
+.front-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 30px;
+  width: 100%;
+  margin-top: auto;
+}
+
+.front-page-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 10px;
+  margin-right: auto;
+}
+
+.front-page-description {
+  font-size: 16px;
+  color: #6c757d;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.front-content {
+  margin-right: auto;
+  margin-left: 20px;
+}
+
+/* Buttons */
+
+.create-account-button,
+.login-button {
+  width: 250px;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.create-account-button {
+  background-color: #6d28d9;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.create-account-button:hover {
+  background-color: #5b21b6;
+}
+
+.login-button {
+  background-color: #cfa5e8;
+  color: #333;
+}
+
+.login-button:hover {
+  background-color: #a57bb5;
+}
+
+.login-btn {
+  width: 100%;
+  max-width: 325px;
+  padding: 12px;
+  background-color: #b7b7bd;
+  color: rgb(254, 250, 250);
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  width: 350px;
+  margin-top: auto;
+}
+
+/* Input Form */
+.input-box {
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 15px;
+}
+
+legend {
+  font-size: 14px;
+  color: rgb(63, 57, 165);
+  font-weight: 500;
+}
+
+input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 16px;
+}
+
+.required-asterisk {
+  color: red;
+}
+
+/* Radio Buttons */
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  margin-right: auto;
+  margin-left: 65px;
+}
+
+.radio-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1f1f1f;
+}
+
+.radio-options {
+  display: flex;
+  gap: 15px;
+  margin-top: 5px;
+}
+
+.radio-option {
+  font-size: 14px;
+  color: #444;
+  display: flex;
+}
+
+/* Submit Button */
+.submit-button {
+  padding: 12px;
+  width: 250px;
+  background-color: #6c63ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 30px;
+  transition: 0.3s ease-in-out;
+}
+
+.submit-button:hover {
+  background-color: #574bff;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .front-page-title {
+    font-size: 24px;
+  }
+
+  .front-page-description {
+    font-size: 14px;
+  }
+
+  .create-account-button,
+  .login-button,
+  .submit-button,
+  .login-btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .front-page {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .front-page {
+    padding: 15px;
+  }
+
+  .front-page-title {
+    font-size: 22px;
+  }
+
+  .front-page-description {
+    font-size: 14px;
+  }
+
+  .create-account-button,
+  .login-button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+/* User Settings Section */
+.account-settings {
+  width: 100%;
+  max-width: 350px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 20px;
+  margin: auto;
+}
+
+.account-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.account-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.profile-pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ddd;
+}
+
+.account-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.account-name {
+  font-size: 16px;
+  font-weight: bold;
+  color: #222;
+  margin: 0;
+}
+
+.account-email {
+  font-size: 14px;
+  color: #777;
+  margin: 2px 0 0;
+}
+
+.account-description {
+  font-size: 14px;
+  color: #555;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .account-settings {
+    padding: 15px;
+    max-width: 100%;
+  }
+
+  .profile-pic {
+    width: 45px;
+    height: 45px;
+  }
+
+  .account-name {
+    font-size: 14px;
+  }
+
+  .account-email {
+    font-size: 13px;
+  }
+
+  .account-description {
+    font-size: 13px;
+  }
+
+  .account-title {
+    background-color: whitesmoke;
+    padding: 10px;
+  }
+}
